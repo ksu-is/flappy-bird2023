@@ -1,7 +1,7 @@
 download pygame - complete
 define game variables and functions
 create the main class of the game (the bird) - this will be the next thing I work on
-create the main loop
+create the main loop - half complete
 create the game world/main menu - complete
 edit game physics after creating the world
 update function
