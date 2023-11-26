@@ -1,8 +1,8 @@
-download pygame
+download pygame - complete
 define game variables and functions
 create the main class of the game
 create the main loop
-create the game world
+create the game world - doing first
 edit game physics after creating the world
 update function
 create a player score counter
