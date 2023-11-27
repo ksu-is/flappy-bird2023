@@ -61,6 +61,13 @@ ground = 0
         pygame.display.update()
         #show fps
         framepersecond_clock.tick(framepersecond)
+#create pipe and make them randomized
+def createpipe():
+        offset = window_height/3
+        pipeheight = game_images['pipeimage'][0].get_height()
+        y2 = offset + random.randrange(0, int(window_height - game_images['sea_level'].get_height() - 1.1 * offset))
+        pipex = window_width + 10
+        
 
 
 
