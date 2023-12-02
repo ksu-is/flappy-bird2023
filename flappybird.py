@@ -67,7 +67,21 @@ def createpipe():
         pipeheight = game_images['pipeimage'][0].get_height()
         y2 = offset + random.randrange(0, int(window_height - game_images['sea_level'].get_height() - 1.1 * offset))
         pipex = window_width + 10
+        y1 = pipeheight - y2 + offset
+        #top pipe then bottom pipe  
+        pipe = [{'x': pipex, 'y': -y1}, {'x': pipex, 'y': y2]  
+        return pipe  
+#creating game over function
+#is the bird over sealevel
+def isGameOver(horizontal, vertical, up_pipes, down_pipes):
+  if vertical > elevation - 25 or vertical < 0:
+    return true
+#did bird hit top pipe
+for pipe in up_pipes:
+  pipeHeight = game_images['pipeimage'][0].get_height()
+  if(vertical < pipeheight + pipe['y']
+     and abs(horizontal - pipe['x']) < game_images['pipeimage'][0].get_width()
+       return true
+
+
         
-
-
-
