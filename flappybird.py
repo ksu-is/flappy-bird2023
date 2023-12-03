@@ -88,7 +88,28 @@ for pipe in up_pipes:
    and abs(horizontal - pipe['x']) < game_images ['pipe_image'][0].get_width():
      return true
   return false
-
+def flappygame(): 
+    your_score = 0
+    horizontal = int(window_width/5) 
+    vertical = int(window_width/2) 
+    ground = 0
+    mytempheight = 100
+    #making sure their are two pipes each window 
+    first_pipe = createPipe() 
+    second_pipe = createPipe() 
+    #list of lower pipes 
+    down_pipes = [ 
+        {'x': window_width+300-mytempheight, 
+         'y': first_pipe[1]['y']}, 
+        {'x': window_width+300-mytempheight+(window_width/2), 
+         'y': second_pipe[1]['y']},]
+    #list of upper pipes  
+    up_pipes = [ 
+        {'x': window_width+300-mytempheight, 
+         'y': first_pipe[0]['y']}, 
+        {'x': window_width+200-mytempheight+(window_width/2), 
+         'y': second_pipe[0]['y']},]
+  
 
 
         
