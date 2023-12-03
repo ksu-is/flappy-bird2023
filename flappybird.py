@@ -82,6 +82,13 @@ for pipe in up_pipes:
   if(vertical < pipeheight + pipe['y']
      and abs(horizontal - pipe['x']) < game_images['pipeimage'][0].get_width()
        return true
+ #did bird hit bottom pipe
+ for pipe in down_pipes:
+   if (vertical + game_images['flappybird'].get_height() > pipe['y'])
+   and abs(horizontal - pipe['x']) < game_images ['pipe_image'][0].get_width():
+     return true
+  return false
+
 
 
         
