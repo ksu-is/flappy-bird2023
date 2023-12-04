@@ -110,20 +110,16 @@ def flappygame():
         {'x': window_width+200-mytempheight+(window_width/2), 
          'y': second_pipe[0]['y']},]
   pipeVelX = -4 #pipe velocity along x 
-  
     bird_velocity_y = -9  # bird velocity 
     bird_Max_Vel_Y = 10   
     bird_Min_Vel_Y = -8
     birdAccY = 1
-      
      #velocity while flapping 
     bird_flap_velocity = -8
-      
     #it is true only if the bird is flapping 
     bird_flapped = False  
     while True: 
-         
-        # Handling the key pressing events 
+        #dealing with the key pressing events 
         for event in pygame.event.get(): 
             if event.type == QUIT or (event.type == KEYDOWN and event.key == K_ESCAPE): 
                 pygame.quit() 
